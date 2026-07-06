@@ -1,26 +1,96 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbf7f2;
+  --foreground: #5d4e47;
+  --ink: #4a4039;
+  --muted: #8a7e78;
+  --coral: #e8987a;
+  --coral-hover: #d88468;
+  --blush: #f9ede8;
+  --peach: #ffcdb2;
+  --sky: #d4e7f5;
+  --sage: #c8d8c4;
+  --paper: #fffcfa;
+  --border: #f0e0d8;
+  --link: #c97b5d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-coral: var(--coral);
+  --color-coral-hover: var(--coral-hover);
+  --color-blush: var(--blush);
+  --color-peach: var(--peach);
+  --color-sky: var(--sky);
+  --color-sage: var(--sage);
+  --color-paper: var(--paper);
+  --color-border: var(--border);
+  --color-link: var(--link);
+  --font-sans: var(--font-nunito);
+  --font-heading: var(--font-fraunces);
 }
 
 body {
-  background: var(--background);
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #fbf7f2 0%, #fff8f4 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.warm-card {
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  background: var(--paper);
+  box-shadow: 0 8px 24px rgb(232 152 122 / 0.08);
+}
+
+@media (min-width: 640px) {
+  .warm-card {
+    border-radius: 24px;
+  }
+}
+
+.warm-card-dashed {
+  border: 2px dashed var(--border);
+  border-radius: 20px;
+  background: rgb(255 252 250 / 0.8);
+}
+
+.sketch-link {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--peach);
+  text-underline-offset: 4px;
+}
+
+.sketch-link:hover {
+  color: var(--link);
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-0.5deg); }
+  50% { transform: rotate(0.8deg); }
+}
+
+.animate-sway { animation: sway 5s ease-in-out infinite; }
+
+.prose-garden {
+  --tw-prose-body: var(--ink);
+  --tw-prose-headings: var(--ink);
+  --tw-prose-links: var(--link);
+  --tw-prose-bold: var(--ink);
+  --tw-prose-code: var(--ink);
+  --tw-prose-quotes: var(--muted);
+  --tw-prose-quote-borders: var(--coral);
 }

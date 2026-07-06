@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M40 260 H360" opacity="0.4"/>
+  <path d="M80 260 Q90 200 110 170 Q125 145 130 120" stroke="#6B9080"/>
+  <ellipse cx="130" cy="108" rx="18" ry="12" stroke="#6B9080" fill="#E8F0EB"/>
+  <path d="M125 96 Q130 80 140 75 Q150 70 155 82" stroke="#6B9080"/>
+  <path d="M200 260 L200 140" stroke="#4A7C59"/>
+  <path d="M170 140 Q200 110 230 140" stroke="#4A7C59" fill="#E8F0EB"/>
+  <path d="M185 125 Q200 95 215 125" stroke="#4A7C59"/>
+  <circle cx="200" cy="90" r="8" stroke="#6B9080" fill="#F8F7F4"/>
+  <path d="M270 260 Q280 210 295 185 Q310 160 300 130" stroke="#6B9080"/>
+  <ellipse cx="298" cy="118" rx="16" ry="11" stroke="#6B9080" fill="#E8F0EB"/>
+  <rect x="155" y="200" width="90" height="55" rx="4" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M170 215 H230 M170 230 H210 M170 245 H220" opacity="0.5"/>
+  <circle cx="320" cy="60" r="20" stroke="#6B9080" fill="#F8F7F4"/>
+  <path d="M310 55 L318 63 L332 48" stroke="#4A7C59"/>
+  <path d="M60 80 Q100 60 140 75" opacity="0.3"/>
+  <text x="60" y="50" font-family="Georgia, serif" font-size="14" fill="#636E72" stroke="none">digital garden</text>
+</svg>
