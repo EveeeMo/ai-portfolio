@@ -4,7 +4,7 @@ export const siteConfig = {
   title: "Eve | AI 应用",
   description: "Eve 的个人站：AI 应用与 iOS 项目",
   url: "https://eve-builds-puce-tau.vercel.app",
-  urlCn: "https://eve.ai-builders.space",
+  urlCn: "https://visto.ai-builders.space",
   heroTitle: "Hola, this is Eve",
   tagline: "折腾 AI ，把想法做成能用的东西。",
   github: "https://github.com/EveeeMo",
