@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.git
+.gitignore
+.env*
+*.md
+!README.md
+.DS_Store
+npm-debug.log*
+.vercel
+*.code-workspace
+build-*.txt
+.npm-run-log.txt

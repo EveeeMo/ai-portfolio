@@ -1,0 +1,9 @@
+{
+  "repo_url": "https://github.com/EveeeMo/ai-portfolio",
+  "service_name": "eve-builds",
+  "branch": "main",
+  "port": 8000,
+  "env_vars": {
+    "NODE_ENV": "production"
+  }
+}
