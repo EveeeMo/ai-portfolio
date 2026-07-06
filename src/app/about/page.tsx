@@ -31,7 +31,7 @@ export default function AboutPage() {
         </div>
 
         <section className="mt-12">
-          <h2 className="font-heading text-2xl text-ink">技能</h2>
+          <h2 className="font-heading text-2xl text-ink">擅长</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {siteConfig.about.skills.map((skill) => (
               <Tag key={skill} label={skill} />
@@ -40,7 +40,7 @@ export default function AboutPage() {
         </section>
 
         <section className="mt-12">
-          <h2 className="font-heading text-2xl text-ink">经历</h2>
+          <h2 className="font-heading text-2xl text-ink">背景</h2>
           <div className="mt-6 space-y-4">
             {siteConfig.about.experience.map((item) => (
               <div key={item.period} className="warm-card p-5">
@@ -54,7 +54,7 @@ export default function AboutPage() {
 
         <section className="mt-12 warm-card bg-blush/50 p-6 sm:p-8">
           <h2 className="font-heading text-xl text-ink">联系我</h2>
-          <p className="mt-2 text-sm text-muted">欢迎来聊聊 AI、项目合作，或者交换想法。</p>
+          <p className="mt-2 text-sm text-muted">{siteConfig.about.contactNote}</p>
           <div className="mt-5 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:gap-3">
             <ButtonLink href={siteConfig.github} external>GitHub</ButtonLink>
             <ButtonLink href={`mailto:${siteConfig.email}`} external>

@@ -5,6 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gitee": "NEXT_PUBLIC_BASE_PATH=/ai-portfolio next build",
+    "build:upma": "bash scripts/prepare-upma-deploy.sh",
+    "redeploy": "bash scripts/redeploy.sh",
+    "deploy:gitee": "bash scripts/deploy-gitee-pages.sh",
     "start": "next start",
     "lint": "eslint"
   },
